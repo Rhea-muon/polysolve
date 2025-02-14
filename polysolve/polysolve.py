@@ -7,7 +7,7 @@ def quadratic(
         a: float , 
         b: float , 
         c: float
-) -> tuple[float, float]:
+): -> tuple[float, float]:
 
     """
     Solves the roots of a quadratic equation.
@@ -15,6 +15,18 @@ def quadratic(
     Uses the quadratic formula. Result must be real.
 
     Parameters...etc.
+    
+    Examples
+    --------
+    >>> quadratic(1., 0., 0.)
+    (0.0, -0.0)
+    >>> quadratic(3., 0., -1.)
+    (0.5773502691896257, -0.5773502691896257)Examples
+    --------
+    >>> quadratic(1., 0., 0.)
+    (0.0, -0.0)
+    >>> quadratic(3., 0., -1.)
+    (0.5773502691896257, -0.5773502691896257)
     """
 
     det = b**2 - (4*a*c)
@@ -27,13 +39,14 @@ def cubic(
         b: float , 
         c: float , 
         d: float
-) -> tuple[float, float]:
+): -> tuple[float, float]:
     """
     Solves the roots of a cubic equation.
 
     Uses the quadratic formula. Result must be real.
 
     Parameters...etc.
+
     """
 
     q = (3*a*c - b**2) / (9*a**2)
