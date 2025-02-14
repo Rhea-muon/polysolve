@@ -9,6 +9,14 @@ def quadratic(
         c: float
 ): -> tuple[float, float]:
 
+    """
+    Solves the roots of a quadratic equation.
+
+    Uses the quadratic formula. Result must be real.
+
+    Parameters...etc.
+    """
+
     det = b**2 - (4*a*c)
 
     return ((-b + np.sqrt(det)) / (2*a),
@@ -19,7 +27,14 @@ def cubic(
         b: float , 
         c: float , 
         d: float
-    ): -> tuple[float, float]:
+): -> tuple[float, float]:
+    """
+    Solves the roots of a cubic equation.
+
+    Uses the quadratic formula. Result must be real.
+
+    Parameters...etc.
+    """
 
     q = (3*a*c - b**2) / (9*a**2)
     r = (9*a*b*c - 27*a**2*d - 2*b**3) / (54*a**3)
