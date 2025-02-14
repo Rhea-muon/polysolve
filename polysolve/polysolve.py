@@ -7,7 +7,7 @@ def quadratic(
         a: float , 
         b: float , 
         c: float
-): -> tuple[float, float]:
+) -> tuple[float, float]:
 
     """
     Solves the roots of a quadratic equation.
@@ -27,7 +27,7 @@ def cubic(
         b: float , 
         c: float , 
         d: float
-): -> tuple[float, float]:
+) -> tuple[float, float]:
     """
     Solves the roots of a cubic equation.
 
